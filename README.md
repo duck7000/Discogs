@@ -13,9 +13,9 @@ Quick Start
 * If you're not using composer or an autoloader include `bootstrap.php`.
 * Get some data
 ```php
-$title = new \Discogs\Title(335266);
-$rating = $title->rating();
-$plotOutline = $title->plotoutline();
+$title = new \Discogs\Title($searchTerm);
+$artist = $title->artist();
+$albumTitle = $title->title();
 
 
 Installation
@@ -36,7 +36,7 @@ Get the files with one of:
 Configuration
 =============
 
-imdbphp needs no configuration by default but can change user agent if configured in config.
+imdbphp needs no configuration by default but user agent can be reconfigured in config.
 
 Searching for a CD
 ====================
@@ -47,6 +47,6 @@ $search = new \Imdb\TitleSearch(); // Optional $config parameter
 $results = $search->search('The Matrix');
 
 // $results is an array of Titles
-// The array will have title, imdbid, year and movietype available
+// The array will have aritst, title, and Discogsid available
 // immediately, but any other data will have to be fetched from IMDb
 ```
