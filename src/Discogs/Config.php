@@ -31,4 +31,16 @@ class Config
      */
     public $default_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0';
 
+    /**
+     * Search limit, max search results
+     * @var int max results
+     */
+    public $searchLimit = 9;
+
+    /**
+     * Search format, CD, LP etc
+     * @var string search format
+     */
+    public $searchFormat = "CD";
+
 }
