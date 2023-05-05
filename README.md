@@ -1,12 +1,12 @@
 Discogs
 =======
 
-PHP library for retrieving CD information from Discogs.
-Retrieve most of the information you can see on Discogs
-Search for titles on Discogs by barcode, cd code or artist, album etc
-Get front poster image url.
-Search is intended for CD but can be changed to LP in TitleSearch line 53
-For each title found by search there are these methods available:
+PHP library for retrieving CD information from Discogs.<br>
+Retrieve most of the information you can see on Discogs.<br>
+Search for titles on Discogs by barcode, cd code or artist, album etc.<br>
+Get front poster image url.<br>
+Search is intended for CD but can be changed to LP in TitleSearch line 53<br>
+For each title found by search there are these methods available:<br>
 
 artist()<br>
 title()<br>
