@@ -9,17 +9,17 @@ Search is intended for CD but can be changed to LP in TitleSearch line 53
 For each title found by search there are these methods available:
 
 artist()<br>
-title()
-year() (release year)
-label()
-country()
-genre()
-style()
-released() (Discogs release ID)
-photo() (Get front image url)
-tracklist() (get tracks information, tracknumber, track title, track length)
-credits()
-barcode()
+title()<br>
+year() (release year)<br>
+label()<br>
+country()<br>
+genre()<br>
+style()<br>
+released() (Discogs release ID)<br>
+photo() (Get front image url)<br>
+tracklist() (get tracks information, tracknumber, track title, track length)<br>
+credits()<br>
+barcode()<br>
 
 
 Quick Start
