@@ -8,7 +8,7 @@ Get front poster image url.
 Search is intended for CD but can be changed to LP in TitleSearch line 53
 For each title found by search there are these methods available:
 
-artist()
+artist()\n
 title()
 year() (release year)
 label()
