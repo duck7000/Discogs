@@ -44,16 +44,18 @@ Get the files with one of:
 * [Zip/Tar download]
 
 ### Requirements
-* PHP >= 7.4 (tested with 8.1)
+* PHP >= 7.4 - 8.1
 * PHP cURL extension
 
 
 Configuration
 =============
 
-DiscogsPHP needs no configuration but two things can be changed:<br>
-user agent can be reconfigured in config.
-Search is intended for CD but can be changed to LP in TitleSearch line 53. I may add that as a config option.
+DiscogsPHP needs no configuration but a few things can be changed:<br>
+user agent can be reconfigured in config.<br>
+Search is default CD, can be configured in config.<br>
+Search Limit default = 10, can be configured in config
+
 
 Searching for a CD
 ====================
