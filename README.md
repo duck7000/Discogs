@@ -3,8 +3,23 @@ Discogs
 
 PHP library for retrieving CD information from Discogs.
 Retrieve most of the information you can see on Discogs
-Search for titles on Discogs by barcode, cd code or artist and album name
-Download front poster image.
+Search for titles on Discogs by barcode, cd code or artist, album etc
+Get front poster image url.
+Search is intended for CD but can be changed to LP in TitleSearch line 53
+For each title found by search there are these methods available:
+
+artist()
+title()
+year() (release year)
+label()
+country()
+genre()
+style()
+released() (Discogs release ID)
+photo() (Get front image url)
+tracklist() (get tracks information, tracknumber, track title, track length)
+credits()
+barcode()
 
 
 Quick Start
