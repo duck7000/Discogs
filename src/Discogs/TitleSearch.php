@@ -38,7 +38,7 @@ class TitleSearch extends MdbBase
                             'released' => $released[2],
                             'url' => $url
                         );
-                    if ($key === 9) {
+                    if ($key === $this->searchLimit) {
                         break;
                     }
                 }
@@ -49,6 +49,9 @@ class TitleSearch extends MdbBase
 
     protected function buildUrl($searchTerms = null)
     {
-        return "https://www.discogs.com/search/?q=" . urlencode($searchTerms) . "&type=release&format_exact=CD";
+        return "https://" . $this->discogsSite . "/search/?q="
+                          . urlencode($searchTerms)
+                          . "&type=release&format_exact="
+                          . $this->searchFormat;
     }
 }
