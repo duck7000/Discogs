@@ -51,9 +51,10 @@ Get the files with one of:
 Configuration
 =============
 
-DiscogsPHP needs no configuration but a few things can be changed:<br>
-user agent can be reconfigured in config.<br>
-Search is default CD, can be configured in config.<br>
+DiscogsPHP needs no configuration but a few things can be changed:
+
+user agent can be changed in config.
+Search is default CD, can be configured in config.
 Search Limit default = 10, can be configured in config
 
 
