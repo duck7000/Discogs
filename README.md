@@ -65,3 +65,4 @@ $results = $search->search('The Matrix');
 // The array will have aritst, title, and Discogsid available
 // immediately, but any other data will have to be fetched from IMDb
 ```
+Credits to imdbphp, i used their search part to make this.
