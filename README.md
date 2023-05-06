@@ -2,8 +2,8 @@ Discogs
 =======
 
 PHP library for retrieving CD information from Discogs.<br>
-Retrieve most of the information you can see on Discogs.<br>
-Search for titles on Discogs by barcode, cd code or artist, album etc.<br>
+Retrieve most of the information you can see on Discogs page of specific CD.<br>
+Search for titles on Discogs by barcode, cd code, artist, album etc.<br>
 Get front poster image url.<br>
 Search is default for CD.<br>
 For each title found by search there are these methods available:<br>
@@ -36,7 +36,7 @@ $albumTitle = $title->title();
 Installation
 ============
 
-This library scrapes discogs.com so changes their site can cause parts of this library to fail.
+This library scrapes discogs.com so changes to their site can cause parts of this library to fail.
 
 Get the files with one of:
 * [Composer](https://www.getcomposer.org)
