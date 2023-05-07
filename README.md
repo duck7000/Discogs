@@ -12,14 +12,15 @@ artist()<br>
 title()<br>
 year() (release year)<br>
 label()<br>
-country()<br>
+country() (release country)<br>
 genre()<br>
 style()<br>
 released() (Discogs release ID)<br>
-photo() (Get front image url)<br>
-tracklist() (get tracks information, tracknumber, track title, track length)<br>
+photo() (front image url)<br>
+tracklist() (get track information, tracknumber, track title, track length)<br>
 credits()<br>
 barcode()<br>
+format()<br>
 
 
 Quick Start
