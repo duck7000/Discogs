@@ -26,8 +26,8 @@ class Config
     public $discogsSite = "www.discogs.com";
 
     /**
-     * Set the default user agent (if none is detected)
-     * @var string
+     * Set the default user agent
+     * @var string user agent
      */
     public $default_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0';
 
@@ -38,7 +38,7 @@ class Config
     public $searchLimit = 9;
 
     /**
-     * Search format, CD, LP etc
+     * Search format, CD, LP, Cassette, Vinyl
      * @var string search format
      */
     public $searchFormat = "CD";
