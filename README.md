@@ -2,24 +2,25 @@ Discogs
 =======
 
 PHP library for retrieving CD information from Discogs.<br>
-Retrieve most of the information you can see on Discogs.<br>
-Search for titles on Discogs by barcode, cd code or artist, album etc.<br>
+Retrieve most of the information you can see on Discogs page of specific CD.<br>
+Search for titles on Discogs by barcode, cd code, artist, album etc.<br>
 Get front poster image url.<br>
-Search is intended for CD.<br>
+Search is default for CD.<br>
 For each title found by search there are these methods available:<br>
 
 artist()<br>
 title()<br>
 year() (release year)<br>
 label()<br>
-country()<br>
+country() (release country)<br>
 genre()<br>
 style()<br>
 released() (Discogs release ID)<br>
-photo() (Get front image url)<br>
-tracklist() (get tracks information, tracknumber, track title, track length)<br>
+photo() (front image url)<br>
+tracklist() (get track information, tracknumber, track title, track length)<br>
 credits()<br>
 barcode()<br>
+format()<br>
 
 
 Quick Start
@@ -36,7 +37,7 @@ $albumTitle = $title->title();
 Installation
 ============
 
-This library scrapes discogs.com so changes their site can cause parts of this library to fail.
+This library scrapes discogs.com so changes to their site can cause parts of this library to fail.
 
 Get the files with one of:
 * [Composer](https://www.getcomposer.org)
@@ -51,9 +52,10 @@ Get the files with one of:
 Configuration
 =============
 
-DiscogsPHP needs no configuration but a few things can be changed:<br>
-user agent can be reconfigured in config.<br>
-Search is default CD, can be configured in config.<br>
+DiscogsPHP needs no configuration but a few things can be changed:
+
+user agent can be changed in config.
+Search is default CD, can be configured in config.
 Search Limit default = 10, can be configured in config
 
 
