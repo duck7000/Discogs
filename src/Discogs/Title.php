@@ -265,7 +265,7 @@ class Title extends MdbBase
                                         $temp = trim(str_replace('*', '', $rowTd->getElementsByTagname('span')->item(0)->textContent));
                                         $track .= str_replace('-', ' ', $temp);
                                         if ($key < $count) {
-                                            $track .= ' - ';
+                                            $track .= ' – '; // not a normal dash!
                                         }
                                     }
                                 }
