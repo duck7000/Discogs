@@ -256,10 +256,20 @@ class Title extends MdbBase
                     if ($rowTds = $row->getElementsByTagname('td')) {
                         $count = count($rowTds) - 1;
                         foreach ($rowTds as $key => $rowTd) {
-                            if (trim($rowTd->textContent) == '' || stripos($rowTd->getAttribute('class'), 'artist_3zAQD') !== false) {
+                            if (trim($rowTd->textContent) == '') {
                                 continue;
                             }
-                            if (stripos($rowTd->getAttribute('class'), 'trackTitle_CTKp4') !== false) {
+                            if (stripos($rowTd->getAttribute('class'), 'artist_3zAQD') !== false) {
+                                if (stripos($this->artist(), 'Various') !== false) {
+                                    if ($rowTd->getElementsByTagname('span')->length != null) {
+                                        $temp = trim(str_replace('*', '', $rowTd->getElementsByTagname('span')->item(0)->textContent));
+                                        $track .= str_replace('-', ' ', $temp);
+                                        if ($key < $count) {
+                                            $track .= ' - ';
+                                        }
+                                    }
+                                }
+                            } elseif (stripos($rowTd->getAttribute('class'), 'trackTitle_CTKp4') !== false) {
                                 if ($rowTd->getElementsByTagname('span')->length != null) {
                                     $track .= str_replace('-', ' ', $rowTd->getElementsByTagname('span')->item(0)->textContent);
                                     if ($key < $count) {
