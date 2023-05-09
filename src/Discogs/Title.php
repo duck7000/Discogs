@@ -265,6 +265,11 @@ class Title extends MdbBase
                                     if ($key < $count) {
                                         $track .= ' - ';
                                     }
+                                } elseif (stripos($rowTd->textContent, 'bonus') !== false) {
+                                    $track .= ' - ' . str_replace('-', ' ', $rowTd->textContent);
+                                    if ($key < $count) {
+                                        $track .= ' - ' . "\n";
+                                    }
                                 }
                             } else {
                                 if (strpos($rowTd->textContent, '-') !== false) {
