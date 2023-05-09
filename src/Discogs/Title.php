@@ -69,9 +69,9 @@ class Title extends MdbBase
             if ($titleAlbumData = $item->item(0)->getElementsByTagname('h1')->item(0)->textContent) {
                 if ($titleAlbumData != '') {
                     $titleAlbum = explode('–', $titleAlbumData); //not a normal dash!
-                    $this->main["artist"] = trim($titleAlbum[0]);
+                    $this->main["artist"] = trim(str_replace('*', '', $titleAlbum[0]));
                     if (isset($titleAlbum[1]) && trim($titleAlbum[1]) != '') {
-                        $this->main["title"] = trim($titleAlbum[1]);
+                        $this->main["title"] = trim(str_replace('*', '', $titleAlbum[1]));
                     }
                 }
             }
