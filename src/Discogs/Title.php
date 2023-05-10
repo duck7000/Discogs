@@ -260,7 +260,7 @@ class Title extends MdbBase
                                 continue;
                             }
                             if (stripos($rowTd->getAttribute('class'), 'artist_3zAQD') !== false) {
-                                if (stripos($this->artist(), 'Various') !== false) {
+                                if (stripos($this->artist(), 'Various') !== false || stripos($this->artist(), '/') !== false) {
                                     if ($rowTd->getElementsByTagname('span')->length != null) {
                                         $temp = trim(str_replace('*', '', $rowTd->getElementsByTagname('span')->item(0)->textContent));
                                         $track .= str_replace('-', ' ', $temp);
