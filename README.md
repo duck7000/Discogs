@@ -40,12 +40,11 @@ Installation
 This library scrapes discogs.com so changes to their site can cause parts of this library to fail.
 
 Get the files with one of:
-* [Composer](https://www.getcomposer.org)
 * Git clone. Checkout the latest release tag.
 * [Zip/Tar download]
 
 ### Requirements
-* PHP >= 7.4 - 8.1
+* PHP >= 7.4 - 8.1 (untested with lower versions)
 * PHP cURL extension
 
 
