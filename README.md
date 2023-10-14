@@ -55,7 +55,7 @@ Configuration
 DiscogsPHP needs no configuration but there are some options in config:
 
 Default user agent
-Default search: CD
+Default search: CD (this can be LP, cassette etc)
 Default search limit: 10
 
 
@@ -65,7 +65,7 @@ Searching for a CD
 ```php
 // include "bootstrap.php"; // Load the class in if you're not using an autoloader
 $search = new \Discogs\TitleSearch();
-$results = $search->search('The Matrix');
+$results = $search->search('Batmobile');
 
 // $results is an array of Titles
 // The array will have artist, title, and Discogsid. And a link to the discogs page.
