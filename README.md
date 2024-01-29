@@ -70,4 +70,3 @@ $results = $search->search('Batmobile');
 // The array will have artist, title, and Discogsid. And a link to the discogs page.
 ```
 Credits to imdbphp, i used their search part to make this.
-credits
