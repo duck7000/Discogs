@@ -71,3 +71,4 @@ $results = $search->search('The Matrix');
 // The array will have artist, title, and Discogsid. And a link to the discogs page.
 ```
 Credits to imdbphp, i used their search part to make this.
+credits
